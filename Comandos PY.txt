@@ -1,0 +1,32 @@
+pipenv install fastapi uvicorn pydantic
+
+pipenv install -r requirements.txt
+
+pipenv run pytest -v
+
+
+Correr serv api
+#1 no hace nada      pipenv run python api.py
+pipenv run uvicorn api:app --reload
+
+
+SE COMENTÓ POR NO HACER DICHA FUNCIONALIDAD
+headers = {
+        #"content-type": "charset=utf-8"
+    }
+
+#CONFIG.PY
+import sys 
+Este módulo provee acceso a algunas variables usadas o mantenidas por 
+el intérprete y a funciones que interactúan fuertemente con el intérprete
+
+sys.argv
+La lista de argumentos de la línea de comandos pasados a un script de Python. 
+argv[0] es el nombre del script (depende del sistema operativo si se trata
+ de una ruta completa o no). Si el comando se ejecutó usando la opción -c de 
+la línea de comandos del intérprete, argv[0] se establece en la cadena de 
+caracteres '-c'. Si no se pasó ningún nombre de secuencia de comandos al
+intérprete de Python, argv[0] es la cadena de caracteres vacía.
+
+Para recorrer la entrada estándar, o la lista de archivos dada en la línea 
+de comando, vea el módulo fileinput.
